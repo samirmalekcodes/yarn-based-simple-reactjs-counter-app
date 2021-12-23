@@ -1,6 +1,6 @@
 import './App.css';
 import { useState } from "react";
-import MyButton from './MyButton';
+import MyButton from './components/MyButton';
 
 // STATE is a variable when information is updated directly displayes it on the screen
 
@@ -22,5 +22,9 @@ function App() {
     </div>
   );
 }
+
+// how to create your own component (MyButton.js)
+// title and color are props here
+
 
 export default App;
