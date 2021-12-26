@@ -1,4 +1,7 @@
 import React from 'react'
+import profiles from './fakeData'
+
+console.log(profiles);
 
 const MyProfileCard = ({ image, name, title, description }) => {
 
