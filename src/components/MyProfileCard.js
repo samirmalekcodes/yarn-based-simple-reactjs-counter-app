@@ -1,18 +1,24 @@
 import React from 'react'
 
-const MyProfileCard = () => {
+const MyProfileCard = ({ image, name, title, description }) => {
 
     return (
-        <div style={{ backgroundColor: 'white' , margin: 10 }}>
-            <div style={{ display: "flex" }}>
-                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.bi4hemoQNKvvwwjINkKinQHaDt%26pid%3DApi&f=1" alt="" height="50px"/>
+        <div style={{ 
+                backgroundColor: 'white', 
+                margin: 10, 
+                padding: 5 , 
+                borderRadius: 15,
+            }}>
+            <div style={{ display: "flex", justifyContent: 'center' }}>
+                <img src={image} alt="" height="75px" style={{ borderRadius: 10}} />
                 <div>
-                    <h2 style={{ marginLeft: "10px" }}> Samir Malek </h2>
-                    <h5 style={{ marginLeft: "10px" }}> Freelance Web Developer & Coach </h5>
+                    <h2 style={{ marginLeft: "10px" }}> {name} </h2>
+                    <h5 style={{ marginLeft: "10px" }}> {title} </h5>
                 </div>
             </div>
-            <div>
-                <p style={{fontSize: "18px", padding: 5}}>Description: I'm a huge fan of Sonic Cartoons. I'm also a developer 👨🏻‍💻 </p>
+            <div style={{ display: "flex" , justifyContent: "center"}}>
+                <p style={{ fontSize: "18px", padding: 5 }}>
+                    Description: {description} </p>
             </div>
         </div>
     )

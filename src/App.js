@@ -12,7 +12,7 @@ import MyProfileCard from './components/MyProfileCard';
 // 5.go into App.js and import your component
 
 // STATE is a variable when information is updated directly displayes 
-  //  it on the screen
+//  it on the screen
 
 // want to make a Counter App
 // 1. make a button
@@ -30,11 +30,21 @@ function App() {
       <h2 style={{ color: "red" }}> {count} </h2>
       <button onClick={() => { setCount(count + 1) }}> + </button>
       <button onClick={() => { setCount(count - 1) }}> - </button>
-      <MyButton title = "BUY" color= "red" />
-      <MyButton title = "SELL" color="green"/>
-      
-      <MyProfileCard />
-      <MyProfileCard />
+      <MyButton title="BUY" color="red" />
+      <MyButton title="SELL" color="green" />
+
+      <MyProfileCard
+        image="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.9r-q3UJerj98VTZ2VjMpZwHaEK%26pid%3DApi&f=1"
+        name="Bob Smith"
+        title="Senior Developer"
+        description="I love to code 24/7. I have 20+ years of experience in web development"
+      />
+      <MyProfileCard
+        image="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.9r-q3UJerj98VTZ2VjMpZwHaEK%26pid%3DApi&f=1"
+        name="John Smith"
+        title="Junior Web Developer"
+        description= "I love to code 24/7."
+      />
     </div>
   );
 }
